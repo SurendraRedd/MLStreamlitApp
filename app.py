@@ -51,13 +51,13 @@ def main():
     st.write(range(10))
 
     #Image opening
-    img = Image.open("download.jfif") #open the image stored in specified location
-    #img = Image.open(urllib.request.urlopen("https://mms.businesswire.com/media/20200616005364/en/798639/22/Streamlit_Logo_%281%29.jpg")) # Opens the image from the url
+    #img = Image.open("download.jfif") #open the image stored in specified location
+    img = Image.open(urllib.request.urlopen("https://mms.businesswire.com/media/20200616005364/en/798639/22/Streamlit_Logo_%281%29.jpg")) # Opens the image from the url
     st.image(img, width=300, caption="Simple Image")
 
     # Video playing
-    vid_file = open("sample-mp4-file.mp4","rb").read() #play the video stored in specified location
-    st.video(vid_file)
+    #vid_file = open("sample-mp4-file.mp4","rb").read() #play the video stored in specified location
+    #st.video(vid_file)
     #videoUserDefined("https://www.youtube.com/embed/B2iAodr0fOo")
 
     #widgets
