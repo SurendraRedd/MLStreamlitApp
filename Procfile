@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run app.py --server.port 5000
+web: sh setup.sh && streamlit run app.py
