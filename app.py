@@ -22,23 +22,22 @@ def main():
     st.title('StreamLit basic Concepts')
 
     # Header/Subheader
-    st.header("To Create Header")
-    st.subheader("To Create subheader")    
+    st.header("Basic Concepts - Streamlit")
+    st.subheader("Host ML applications using streamlit.")    
 
-    st.subheader("Do you want to build the GUI using web app")
     st.code('pip install streamlit')
 
     #text
-    st.text("hello Streamlit")
+    st.text("Example on how to create text - Hello Streamlit Application!")
 
     #Markdown
-    st.markdown("### This is a Markdown")
+    st.markdown("### Markdown text in Streamlit.")
 
     #Will be used for displaying the Error Messages in a colourful format
-    st.success("Successful")
-    st.info("Information!")
-    st.warning('this is a warning')
-    st.error("this is an error Danger")
+    st.success("Success Message.")
+    st.info("Information Message.")
+    st.warning('Warning Message.')
+    st.error("Danger Message.")
     
     # Exception handling
     st.exception("IndexError('list out of index')")
@@ -46,7 +45,7 @@ def main():
     #help of the function
     st.help(range)
 
-    st.write("Text with write")
+    st.write("Example on how to write Text using streamlit.")
 
     st.write(range(10))
 
@@ -62,12 +61,12 @@ def main():
 
     #widgets
     if st.checkbox("Show/hide"):
-        st.text("Showing or Hiding Widget")
+        st.text("Widget to display or hide the checkbox.")
 
     # Radio
-    status = st.radio("What is your status",("Married","Single"))
-    if status == 'Married':
-        st.success("You are Married")
+    status = st.radio("Which is your favourite Language?",("Python","JavaScript","Java","C","C++"))
+    if status == 'Python':
+        st.success("You have selected Python as your favourite Language!")
 
     # Add a selectbox to the sidebar:
     add_selectbox = st.sidebar.selectbox(
@@ -76,11 +75,11 @@ def main():
     )
 
     if add_selectbox == 'About':
-        st.write('You have selected about page')
+        st.write('App version 1.0 - Basic Concepts')
     elif add_selectbox == 'Home':
-        st.write('you have selected Home page')
+        st.write('Home Page Selected. Welcome to Streamlit Basic Concepts.')
     else:
-        st.write('you have selected help page')
+        st.write('Help Page Selected. Check the Streamlit Concepts.')
 
     # Sample Progress bar
     my_bar = st.progress(0)
